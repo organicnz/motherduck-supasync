@@ -96,7 +96,7 @@ jobs:
         with:
           name: motherduck-supasync-${{ github.sha }}
           path: target/release/motherduck-supasync
-          retention-days: 7
+          retention-days: 1
 
   sync:
     name: 🚀 Sync
@@ -222,7 +222,7 @@ jobs:
         with:
           name: sync-result-${{ github.run_id }}
           path: sync-result.json
-          retention-days: 30
+          retention-days: 1
 
       - name: Summary
         if: always()
